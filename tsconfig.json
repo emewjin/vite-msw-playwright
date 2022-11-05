@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "isolatedModules": true,
+    "noEmit": true, 
+    "jsx": "react-jsx",
+    "useDefineForClassFields": true,
+    "strict": true,
+    "importsNotUsedAsValues": "error",
+    "esModuleInterop": true, 
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node", 
+    "resolveJsonModule": true, 
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsxImportSource": "@emotion/react",
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "exclude": ["node_modules", "dist"]
+}

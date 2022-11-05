@@ -1,0 +1,19 @@
+warning package.json: No license field
+warning ../../../package.json: No license field
+$ playwright test playwright
+
+Running 2 tests using 2 workers
+
+[1A[2K[WebServer] warning package.json: No license field
+
+[1A[2K[WebServer] warning ../../../package.json: No license field
+
+[1A[2K[1/2] [chromium] › example.spec.ts:22:3 › 데모 테스트 › 초록 사과
+[1A[2K[2/2] [chromium] › example.spec.ts:10:3 › 데모 테스트 › 빨간 사과
+[1A[2K
+[32m  2 passed[39m[2m (4s)[22m
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
