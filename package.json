@@ -1,5 +1,6 @@
 {
   "name": "vite-msw-playwright",
+  "private": true,
   "version": "0.0.1",
   "workspaces": [
     "packages/*",
@@ -59,7 +60,8 @@
     "react-dom": "17.0.2",
     "@types/react": "17.0.33",
     "@types/react-dom": "17.0.10",
-    "typescript": "4.6.4"
+    "typescript": "4.6.4",
+    "vite": "3.0.2"
   },
   "msw": {
     "workerDirectory": "packages/*/public"
