@@ -1,6 +1,8 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
+import dotenv from 'dotenv';
 
+dotenv.config({ path: '.env.e2e' });
 const config: PlaywrightTestConfig = {
   testDir: './playwright',
   timeout: 30 * 1000,
