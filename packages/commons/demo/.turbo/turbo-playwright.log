@@ -1,17 +1,25 @@
 warning package.json: No license field
-warning ../../../package.json: No license field
 $ playwright test playwright
 
 Running 2 tests using 2 workers
 
 [1A[2K[WebServer] warning package.json: No license field
 
-[1A[2K[WebServer] warning ../../../package.json: No license field
+[1A[2K[WebServer] 오후 2:33:05 [vite] warning: Top-level "this" will be replaced with undefined since this file is an ECMAScript module
+27 |        lineNumber: 27,
+28 |        columnNumber: 7
+29 |      }, this)
+   |         ^
+30 |    }, void 0, false, {
+31 |      fileName: _jsxFileName,
 
-[1A[2K[1/2] [chromium] › example.spec.ts:22:3 › 데모 테스트 › 초록 사과
-[1A[2K[2/2] [chromium] › example.spec.ts:10:3 › 데모 테스트 › 빨간 사과
+  Plugin: vite:esbuild
+  File: /Users/emewjin/vite-msw-playwright/packages/commons/demo/src/main.tsx
+
+[1A[2K[1/2] [chromium] › example.spec.ts:19:3 › demo › is green apple
+[1A[2K[2/2] [chromium] › example.spec.ts:7:3 › demo › is red apple
 [1A[2K
-[32m  2 passed[39m[2m (4s)[22m
+[32m  2 passed[39m[2m (3s)[22m
 
 To open last HTML report run:
 [36m[39m

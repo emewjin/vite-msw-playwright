@@ -6,7 +6,9 @@ import { worker } from './mocks/browser';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
-void worker.start();
+if (import.meta.env.VITE_USE_MSW === 'true') {
+  void worker.start();
+}
 
 const queryClient = new QueryClient({
   defaultOptions: {

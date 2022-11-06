@@ -7,7 +7,7 @@ const config: PlaywrightTestConfig = {
   testDir: './playwright',
   timeout: 30 * 1000,
   expect: {
-    timeout: 10000,
+    timeout: 5000,
   },
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -15,10 +15,10 @@ const config: PlaywrightTestConfig = {
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    headless: false,
+    headless: true,
     actionTimeout: 0,
     baseURL: 'http://localhost:5173',
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
   },
   projects: [
     {
@@ -29,7 +29,7 @@ const config: PlaywrightTestConfig = {
     },
   ],
   webServer: {
-    command: 'VITE_USE_MSW=true yarn dev',
+    command: 'yarn dev',
     port: 5173,
   },
 };
